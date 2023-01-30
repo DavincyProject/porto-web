@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Davincy Project</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+        </div>
+
+        <div class="center-navbar">
+          <a href="#">Home</a>
+          <a>About</a>
+          <a>Contact</a>
+        </div>
+
+        <div class="right-nav">
+          <a href="#">
+            <button>Login</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-section">
+      <div class="isi">
+        <h1><span class="auto-input"></span></h1>
+        <h2>Davincy Project!</h2>
+      </div>
+      <div class="btn-hero" data-aos="flip-up" data-aos-delay="200">
+        <a href="#technology">
+          <button>Start Exploring</button>
+        </a>
+      </div>
+    </div>
+
+    <section id="technology">
+      <div class="main-content">
+        <div
+          class="techno-title"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="210"
+          data-aos-offset="0"
+        >
+          <h1>Technology Used</h1>
+        </div>
+        <div class="logo-techno">
+          <div class="logo-holder" data-aos="zoom-in" data-aos-delay="210">
+            <img class="icon-size" src="assets/icon/html5.svg" alt="HTML" />
+            <h3>HTML 5</h3>
+          </div>
+          <div class="logo-holder" data-aos="zoom-in" data-aos-delay="210">
+            <img
+              class="icon-size"
+              src="assets/icon/javascript.svg"
+              alt="AOS js"
+            />
+            <h3>AOS JS</h3>
+          </div>
+          <div class="logo-holder" data-aos="zoom-in" data-aos-delay="210">
+            <img
+              class="icon-size"
+              src="assets/icon/javascript.svg"
+              alt="javascript"
+            />
+            <h3>JavaScript</h3>
+          </div>
+          <div class="logo-holder" data-aos="zoom-in" data-aos-delay="210">
+            <img
+              class="icon-size"
+              src="assets/icon/javascript.svg"
+              alt="typed js"
+            />
+            <h3>Typed JS</h3>
+          </div>
+          <div class="logo-holder" data-aos="zoom-in" data-aos-delay="210">
+            <img class="icon-size" src="assets/icon/css3.svg" alt="CSS" />
+            <h3>CSS3</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="mini-project">
+      <div class="mini-title">
+        <h1>Mini Project</h1>
+      </div>
+      <div class="content-container">
+        
+      </div>
+    </div>
+
+    <!-- typed js start here -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var ketikan = new Typed(".auto-input", {
+        strings: [
+          "Selamat Datang di",
+          "Welcome to",
+          "ようこそ",
+          "Willkommen zu",
+          "Bienvenue à",
+          "Добро пожаловать в",
+          "welkom bij",
+          "에 오신 것을 환영합니다",
+          "Välkommen till",
+          "Bienvenido a",
+          " ಸುಸ್ವಾಗತ",
+          "Wilujeng sumping",
+          " ยินดีต้อนรับสู่",
+          "Hoşgeldiniz",
+        ],
+        typeSpeed: 140,
+        backSpeed: 30,
+        smartBackspace: true,
+        shuffle: true,
+        loop: true,
+      });
+    </script>
+
+    <!-- aos start here -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- script local start here -->
+    <script src="src/script.js"></script>
+  </body>
+</html>
