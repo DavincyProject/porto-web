@@ -15,3 +15,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+function loginAlert(){
+  alert("Maaf Tombol ini belum dapat berfungsi")
+}
