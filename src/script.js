@@ -16,6 +16,8 @@ function myFunction() {
   }
 }
 
-function loginAlert(){
-  alert("Maaf Tombol ini belum dapat berfungsi")
-}
+//preloader 
+const loader = document.getElementById("preloader");
+window.addEventListener("load", function(){
+  loader.style.display = "none";
+}, 1500);

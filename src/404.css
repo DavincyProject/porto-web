@@ -34,6 +34,10 @@ body {
   margin: 0;
 }
 
+.tombol:hover {
+  cursor: pointer;
+}
+
 button {
   --b: 3px;
   /* border thickness */

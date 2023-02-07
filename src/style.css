@@ -50,13 +50,30 @@ nav {
 }
 
 .center-navbar a {
+  position: relative;
   font-weight: bold;
   color: white;
   font-size: 20px;
 }
 
+.center-navbar a:after {
+  position: absolute;
+  content: "";
+  background: #fbca1f;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  width: 0%;
+  transition: 500ms ease-in-out;
+}
+
+.center-navbar a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 .center-navbar a:hover {
-  color: #d89216;
+  color: #fbca1f;
   transition: 0.3s;
 }
 
