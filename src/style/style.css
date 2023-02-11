@@ -134,6 +134,10 @@ nav {
   color: white;
 }
 
+.isi h1 {
+  text-align: center;
+}
+
 .isi h2 {
   margin-top: -12px;
   font-size: 40px;
@@ -393,7 +397,7 @@ h1 {
 
   .center-navbar {
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: #2f3640;
     top: 138px;
