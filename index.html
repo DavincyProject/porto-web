@@ -7,6 +7,20 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <link rel="stylesheet" href="src/style/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/47200ec148.js"></script>
+
+    <!-- JQuery start here -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#icon').click(function(){
+          $('#navbar').toggleClass('show');
+          $('.center-navbar').toggleClass('show');
+        });
+      });
+    </script>
+    <!-- JQuery end here -->
+
     <title>Davincy Project</title>
   </head>
   <body>
@@ -26,6 +40,10 @@
           <a href="src/404.html">
             <button>Login</button>
           </a>
+        </div>
+
+        <div id="icon">
+          <i class="fa-sharp fa-solid fa-bars"></i>
         </div>
       </div>
     </div>
