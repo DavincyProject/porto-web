@@ -450,4 +450,49 @@ h1 {
     text-align: center;
     font-size: 13px;
   }
+  
+  #navbar.show{
+    background: rgb(18, 26, 42);
+    transition: all 0.2s;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .center-navbar {
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(rgb(17, 24, 39), rgb(75, 85, 99));
+    top: 135px;
+    left: -105%;
+    text-align: center;
+    align: center;
+    z-index: 9999;
+    transition: all 0.2s;
+    transparent: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .center-navbar.show {
+    left: 0;
+    width: 100%;
+  }
+
+  .center-navbar a{
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  .right-nav {
+    visibility: hidden;
+  }
+
+  #icon {
+    display: block;
+    color : white;
+  }
 }
