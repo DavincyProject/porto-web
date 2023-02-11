@@ -105,6 +105,7 @@ nav {
   float: right;
   cursor: pointer;
   display: none;
+  margin: 0;
 }
 
 //sticky navbar
