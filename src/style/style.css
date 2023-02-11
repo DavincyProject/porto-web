@@ -434,4 +434,19 @@ h1 {
     display: block;
     color : white;
   }
+  
+@media screen and (max-width: 500px) {
+  .fkiri h3 {
+    font-size: 20px;
+  }
+
+  .logo-kontak img {
+    align: center;
+    width: 30px;
+  }
+
+  .fkanan p {
+    text-align: center;
+    font-size: 13px;
+  }
 }
