@@ -17,6 +17,7 @@ var ketikan = new Typed(".auto-input", {
     ],
     typeSpeed: 140,
     backSpeed: 40,
+    shuffle: true,
     smartBackspace: true,
     loop: true,
 });
