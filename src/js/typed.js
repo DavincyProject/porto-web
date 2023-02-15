@@ -16,7 +16,7 @@ var ketikan = new Typed(".auto-input", {
         "Hoşgeldiniz",
     ],
     typeSpeed: 140,
-    backSpeed: 30,
+    backSpeed: 40,
     smartBackspace: true,
     shuffle: true,
     loop: true,
