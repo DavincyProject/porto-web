@@ -14,6 +14,12 @@ body {
   background: linear-gradient(to bottom, #141420, #0b0c10);
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  place-items: middle;
+}
+
 //navbar style start from here
 nav {
   position: sticky;
@@ -311,7 +317,8 @@ button {
 
 //footer style start from here
 .wrapper {
-  position: relative;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer {
@@ -338,11 +345,23 @@ button {
 
 .fkiri h3 {
   font-size: 25px;
+  margin-top: -5px;
   margin-bottom: 0px;
+}
+
+.logo-kontak {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-kontak a {
   text-decoration: none;
+}
+
+.logo-kontak i {
+  color: white;
 }
 
 .logo-kontak img {
@@ -371,7 +390,7 @@ button {
 }
 
 .bawah {
-  color: white;
+  color: #e7f6f2;
   text-align: center;
   font-size: 10px;
 }
@@ -379,10 +398,15 @@ button {
 .bawah p,
 h1 {
   margin: 0;
+  padding: 0;
 }
 
 .bawah p {
   font-size: 12px;
+}
+
+.warnabawah {
+  color: #a5c9ca;
 }
 
 @media screen and (max-width: 800px) {
@@ -391,7 +415,7 @@ h1 {
     font-size: 16px;
   }
 
-  #navbar.show{
+  #navbar.show {
     background: rgb(18, 26, 42);
     transition: all 0.2s;
     border-top-left-radius: 20px;
@@ -421,7 +445,7 @@ h1 {
     width: 100%;
   }
 
-  .center-navbar a{
+  .center-navbar a {
     display: block;
     line-height: 50px;
     font-size: 20px;
@@ -433,9 +457,10 @@ h1 {
 
   #icon {
     display: block;
-    color : white;
+    color: white;
   }
-  
+}
+
 @media screen and (max-width: 500px) {
   .fkiri h3 {
     font-size: 20px;
@@ -449,5 +474,50 @@ h1 {
   .fkanan p {
     text-align: center;
     font-size: 13px;
+  }
+
+  #navbar.show {
+    background: rgb(18, 26, 42);
+    transition: all 0.2s;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .center-navbar {
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(rgb(17, 24, 39), rgb(75, 85, 99));
+    top: 135px;
+    left: -105%;
+    text-align: center;
+    align: center;
+    z-index: 9999;
+    transition: all 0.2s;
+    transparent: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .center-navbar.show {
+    left: 0;
+    width: 100%;
+  }
+
+  .center-navbar a {
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  .right-nav {
+    visibility: hidden;
+  }
+
+  #icon {
+    display: block;
+    color: white;
   }
 }
