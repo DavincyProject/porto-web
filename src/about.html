@@ -4,27 +4,101 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png" />
     <link rel="stylesheet" href="style/about.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Davincy Project</title>
+    <title>Tentang - Davincy Project</title>
   </head>
   <body>
-    <div class="about-hero">
-      <h1>About Me</h1>
-      <p>
-        Halo, nama saya Billy. saya merupakan mahasiswa Semester 6 di
-        Universitas Bina Sarana Informatika dengan jurusan Teknologi Informasi.
-        ini merupakan project Portofolio saya yang pertama, dan dibuat murni
-        dengan menggunakan HTML, CSS, dan juga Javascript tanpa ada bantuan
-        framework seperti Tailwindcss,Bootstrap, React JS.
-      </p>
-      <p>
-        nama project ini adalah DavincyProject yang dimana nama Davincy sendiri
-        saya dapatkan ketika masih di bangku SMP karena melihat gambar lukisan
-        Monalisa
-      </p>
+    <div id="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <a href="../#"><img src="../assets/logo.png" alt="logo" /></a>
+        </div>
+
+        <div class="center-navbar">
+          <a class="ahover" href="../#">Home</a>
+          <a class="ahover" href="#">About</a>
+          <a class="ahover" href="../#contacts">Contact</a>
+        </div>
+
+        <div id="icon">
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </div>
+      </div>
     </div>
+
+    <div class="about-hero">
+      <div class="content">
+        <h1>
+          <span class="welcome">Halo!</span><br />
+          Terimakasih telah berkunjung ke Davincy Project
+        </h1>
+        <p>
+          Nama saya Billy, pencipta dan pemilik dari Davincy Project ini. saya
+          adalah Mahasiswa semester 6 di Universitas Bina Sarana Informatika,
+          dan saya memiliki minat yang besar dalam bidang web programming.
+          <br />
+          <br />
+          Saya membuat website ini dengan tujuan melatih tingkat pemahaman saya
+          akan CSS, HTML, JS dan juga layouting, saya harap website ini dapat
+          memberikan manfaat bagi saya sendiri dan juga bagi pengunjung website
+          ini dalam membuat tampilan website sederhana namun ringan dan
+          responsive.
+          <br />
+          <br />
+          Jika kamu memiliki pertanyaan atau masukan, jangan ragu untuk
+          menghubungi saya melalui form yang telah disediakan dibawah. Saya
+          harap website ini dapat berguna untuk para pengunjung di sini, sampai
+          jumpa di showcase lain hari 👋.
+        </p>
+      </div>
+      <div class="signed">
+        <h5 class="founder">Hormat saya,</h5>
+        <a class="ttd">Billy</a><br />
+        <h5 class="founder">Founder & creator Davincy Project</h5>
+      </div>
+    </div>
+
+    <div class="contactme">
+      <div class="judul">
+        <h1>Hubungi Saya</h1>
+      </div>
+      <div class="form-container">
+        <form>
+          <label for="Email">Email</label>
+          <input type="email" name="email" />
+
+          <label for="First Name">Nama Depan</label>
+          <input type="text" name="First Name" />
+
+          <label for="Last Name">Nama Belakang</label>
+          <input type="text" name="Last Name" />
+
+          <label for="comment">Pesan</label>
+          <textarea
+            name="comment"
+            form="usrform"
+            placeholder="Isi pesan kamu disini ... "
+          ></textarea
+          ><br />
+          <button type="submit" value="Submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <section id="contacts">
+      <div class="wrapper">
+        <div class="footer"></div>
+        <div class="bawah">
+          <h1>&copy 2023 Davincy Project. All rights reserved.</h1>
+          <p>Made with ❤️ by DavincyProject</p>
+          <p class="warnabawah">
+            All icons and logo are property of their respective owners.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- aos start here -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -32,7 +106,22 @@
       AOS.init();
     </script>
 
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/47200ec148.js"></script>
+
+    <!-- JQuery start here -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#icon").click(function () {
+          $("#navbar").toggleClass("show");
+          $(".center-navbar").toggleClass("show");
+        });
+      });
+    </script>
+    <!-- JQuery end here -->
+
     <!-- script local start here -->
-    <script src="js/script.js"></script>
+    <script src="src/js/script.js"></script>
   </body>
 </html>

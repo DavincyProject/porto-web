@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
-
-
-/* font-family: "Montserrat", sans-serif; */
-/* font-family: "Outfit", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -15,10 +12,418 @@ html {
 }
 
 body {
-  height: 100vh;
   background: linear-gradient(to bottom, #141420, #0b0c10);
+
+  color: white;
 }
 
-.about-hero {
+//navbar style start from here
+nav {
+  position: sticky;
+  top: 0;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar-container a {
+  text-decoration: none;
+}
+
+.title {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  box-shadow: 0.1em 0.1em;
+}
+
+.center-navbar a {
+  position: relative;
+  font-weight: bold;
   color: white;
+  font-size: 20px;
+}
+
+.center-navbar a:after {
+  position: absolute;
+  content: "";
+  background: #fbca1f;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  width: 0%;
+  transition: 500ms ease-in-out;
+}
+
+.center-navbar a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.center-navbar a:hover {
+  color: #fbca1f;
+  transition: 0.3s;
+}
+
+.right-nav button {
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid gray;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+}
+
+.right-nav button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+  cursor: pointer;
+}
+
+.right-nav button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+#icon {
+  color: white;
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+  display: none;
+  margin: 0;
+}
+
+//sticky navbar
+//jangan dirubah karena id dipanggil ke js
+#navbar {
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.bawah {
+  color: white;
+}
+
+.bawah p,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.bawah h1 {
+  font-size: 15px;
+}
+
+.bawah p {
+  font-size: 12px;
+}
+
+.warnabawah {
+  color: #a5c9ca;
+}
+
+#contacts {
+  width: 100%;
+  height: 28px;
+  left: 0px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+//about style start from here
+.about-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome {
+  background: linear-gradient(to right, #4768a9, #93a8fa, #7fd3f8, #d2f8ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.content {
+  padding: 10px;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.content h1 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.content p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.signed {
+  margin-left: 135px;
+  margin-right: 130px;
+}
+
+.signed a {
+  font-size: 25px;
+  font-family: "Gochi Hand", cursive;
+}
+
+.founder {
+  margin: 0;
+  font-weight: normal;
+}
+
+.contactme {
+  margin-top: 100px;
+  margin-left: 130px;
+  margin-right: 130px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+}
+
+.form-container > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  text-align: left;
+}
+
+.form-container input,
+.form-container textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ff6384;
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+}
+
+.form-container button[type="submit"] {
+  background-color: #4768a9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-container button {
+  width: 50%;
+}
+
+.form-container button[type="submit"]:hover {
+  transform: scale(1.02);
+  transition: transform 0.5s ease-in-out;
+}
+
+//about style end from here
+
+@media screen and (max-width: 800px) {
+  .fkanan p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  #navbar.show {
+    background: rgb(18, 26, 42);
+    transition: all 0.2s;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .center-navbar {
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(rgb(17, 24, 39), rgb(75, 85, 99));
+    top: 135px;
+    left: -105%;
+    text-align: center;
+    align: center;
+    z-index: 9999;
+    transition: all 0.2s;
+    transparent: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .center-navbar.show {
+    left: 0;
+    width: 100%;
+  }
+
+  .center-navbar a {
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  .right-nav {
+    visibility: hidden;
+  }
+
+  #icon {
+    display: block;
+    color: white;
+  }
+
+  .about-hero {
+    margin: 0;
+  }
+
+  .content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .content h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .content p {
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .signed {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+
+  .contactme {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fkiri h3 {
+    font-size: 20px;
+  }
+
+  .logo-kontak img {
+    align: center;
+    width: 30px;
+  }
+
+  .fkanan p {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  #navbar.show {
+    background: rgb(18, 26, 42);
+    transition: all 0.2s;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .center-navbar {
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(rgb(17, 24, 39), rgb(75, 85, 99));
+    top: 135px;
+    left: -105%;
+    text-align: center;
+    align: center;
+    z-index: 9999;
+    transition: all 0.2s;
+    transparent: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .center-navbar.show {
+    left: 0;
+    width: 100%;
+  }
+
+  .center-navbar a {
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  .right-nav {
+    visibility: hidden;
+  }
+
+  #icon {
+    display: block;
+    color: white;
+  }
+
+  .content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .content h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .content p {
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .signed {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+
+  .contactme {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .form-container > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

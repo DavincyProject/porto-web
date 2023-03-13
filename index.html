@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png" sizes="16x16" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <link rel="stylesheet" href="src/style/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
-    <title>Davincy Project</title>
+    <title>Beranda - Davincy Project</title>
   </head>
   <body>
     <div id="navbar">
@@ -16,10 +15,10 @@
         <div class="logo">
           <a href="#"><img src="assets/logo.png" alt="logo" /></a>
         </div>
- 
+
         <div class="center-navbar">
           <a class="ahover" href="#">Home</a>
-          <a class="ahover" href="src/404.html">About</a>
+          <a class="ahover" href="src/about.html">About</a>
           <a class="ahover" href="#contacts">Contact</a>
         </div>
 
@@ -211,17 +210,17 @@
     <script>
       AOS.init();
     </script>
-    
+
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/47200ec148.js"></script>
 
     <!-- JQuery start here -->
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script>
-      $(document).ready(function(){
-        $('#icon').click(function(){
-          $('#navbar').toggleClass('show');
-          $('.center-navbar').toggleClass('show');
+      $(document).ready(function () {
+        $("#icon").click(function () {
+          $("#navbar").toggleClass("show");
+          $(".center-navbar").toggleClass("show");
         });
       });
     </script>
